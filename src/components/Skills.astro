@@ -1,0 +1,22 @@
+---
+import { skills } from "../data/cv";
+---
+
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="index">03 / Stack</span>
+        <h2>Technical skills</h2>
+      </div>
+    </div>
+    <div class="skills-grid">
+      {skills.map((s) => (
+        <div class="skill">
+          <div class="label">{s.label}</div>
+          <div class="value">{s.value}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

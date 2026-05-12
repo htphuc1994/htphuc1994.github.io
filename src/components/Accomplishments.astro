@@ -1,0 +1,28 @@
+---
+import { accomplishments } from "../data/cv";
+---
+
+<section class="section" id="accomplishments">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="index">05 / Recognition</span>
+        <h2>Accomplishments &amp; certifications</h2>
+      </div>
+    </div>
+    {accomplishments.map((a) => (
+      <div class="entry">
+        <div class="meta">{a.year}</div>
+        <div>
+          <div class="sub">
+            {a.url ? (
+              <a href={a.url} target="_blank" rel="noopener">{a.text}</a>
+            ) : (
+              a.text
+            )}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

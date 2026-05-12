@@ -1,0 +1,40 @@
+---
+import { publications } from "../data/cv";
+
+const groups = [
+  { key: "journals", title: "Journals", items: publications.journals },
+  { key: "proceedings", title: "Proceedings", items: publications.proceedings },
+  { key: "preprints", title: "Preprints", items: publications.preprints },
+];
+---
+
+<section class="section" id="publications">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="index">06 / Research</span>
+        <h2>Publications</h2>
+      </div>
+    </div>
+    {groups.map((g) => (
+      <div>
+        <div class="subsection-title">{g.title}</div>
+        {g.items.map((p) => (
+          <div class="entry">
+            <div class="meta">{p.year}</div>
+            <div>
+              <div class="sub">
+                {p.url ? (
+                  <a href={p.url} target="_blank" rel="noopener">{p.citation}</a>
+                ) : (
+                  p.citation
+                )}
+                {p.tag && <span class="tag">{p.tag}</span>}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+</section>

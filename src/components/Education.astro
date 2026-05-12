@@ -1,0 +1,39 @@
+---
+import { education } from "../data/cv";
+---
+
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="index">04 / Academic</span>
+        <h2>Education</h2>
+      </div>
+    </div>
+    {education.map((e) => (
+      <div class="entry">
+        <div class="meta">{e.period}</div>
+        <div>
+          <h3 class="title">{e.degree}</h3>
+          <div class="sub">
+            {e.schoolUrl ? (
+              <a href={e.schoolUrl} target="_blank" rel="noopener">{e.school}</a>
+            ) : (
+              e.school
+            )}
+            <span style="color: var(--muted)"> · {e.location}</span>
+          </div>
+          {e.note && (
+            <div class="note">
+              {e.thesisUrl ? (
+                <a href={e.thesisUrl} target="_blank" rel="noopener">{e.note}</a>
+              ) : (
+                e.note
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

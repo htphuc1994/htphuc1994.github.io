@@ -1,0 +1,45 @@
+---
+import { profile } from "../data/cv";
+---
+
+<header class="site-header">
+  <div class="container wrap">
+    <a class="brand" href="#top">
+      {profile.shortName}<span class="dot">.</span>
+    </a>
+    <nav class="nav">
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#publications">Publications</a>
+      <button class="theme-toggle" aria-label="Toggle theme" id="theme-toggle">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" id="theme-icon-sun">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<script is:inline>
+  (function () {
+    const btn = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+    const sunPath = `<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>`;
+    const moonPath = `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>`;
+    const render = () => {
+      const icon = document.getElementById("theme-icon-sun");
+      if (!icon) return;
+      icon.innerHTML = html.getAttribute("data-theme") === "dark" ? sunPath : moonPath;
+    };
+    render();
+    btn?.addEventListener("click", () => {
+      const current = html.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      const next = current === "dark" ? "light" : "dark";
+      html.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (_) {}
+      render();
+    });
+  })();
+</script>

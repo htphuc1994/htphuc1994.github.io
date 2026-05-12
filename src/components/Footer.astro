@@ -1,0 +1,16 @@
+---
+import { profile } from "../data/cv";
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container row">
+    <div>© {year} {profile.name}. Built with <a href="https://astro.build" target="_blank" rel="noopener">Astro</a> · Hosted on GitHub Pages.</div>
+    <div class="socials">
+      <a href={`mailto:${profile.email}`}>Email</a>
+      <a href={profile.github} target="_blank" rel="noopener">GitHub</a>
+      <a href={profile.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+      <a href={profile.orcid} target="_blank" rel="noopener">ORCID</a>
+    </div>
+  </div>
+</footer>

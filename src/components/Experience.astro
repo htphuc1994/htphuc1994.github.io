@@ -1,0 +1,36 @@
+---
+import { roles } from "../data/cv";
+---
+
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="index">02 / Career</span>
+        <h2>Selected experience</h2>
+      </div>
+    </div>
+    <div class="timeline">
+      {roles.map((role) => (
+        <article class="role">
+          <div class="period">{role.period}</div>
+          <div>
+            <h3 class="role-title">{role.title}</h3>
+            <div class="company">
+              {role.companyUrl ? (
+                <a href={role.companyUrl} target="_blank" rel="noopener">{role.company}</a>
+              ) : (
+                role.company
+              )}
+            </div>
+            <div class="location">{role.location}</div>
+            <ul>
+              {role.highlights.map((h) => <li>{h}</li>)}
+            </ul>
+            {role.stack && <span class="stack">{role.stack}</span>}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
