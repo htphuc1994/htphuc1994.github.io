@@ -24,8 +24,5 @@ yarn-error.log*
 .idea/
 .claude/settings.local.json
 
-# LaTeX build artifacts
-Phuc_Huynh_CV/*.aux
-Phuc_Huynh_CV/*.log
-Phuc_Huynh_CV/*.out
-Phuc_Huynh_CV/*.toc
+# CV source (kept locally, not published)
+Phuc_Huynh_CV/
