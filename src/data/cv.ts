@@ -142,12 +142,15 @@ export const accomplishments: Accomplishment[] = [
   { year: "2026", text: "Anthropic — Building with the Claude API", url: "https://verify.skilljar.com/c/945szf6z8s7z" },
   { year: "2026", text: "Anthropic — Introduction to Model Context Protocol", url: "https://verify.skilljar.com/c/asmowak7i49f" },
   { year: "2026", text: "Anthropic — Introduction to Agent Skills", url: "https://verify.skilljar.com/c/dyezjsvgt4da" },
-  { year: "English", text: "IELTS 6.5" },
+  { year: "2026", text: "English IELTS 6.5" },
   { year: "2025", text: "Codility Black Belt — highest tier at National Australia Bank." },
   { year: "2025", text: "NAB Recognition Awards (Q2 and Q3)." },
   { year: "2023", text: "Java Certificate — Mangtas, Singapore", url: "https://drive.google.com/file/d/1AeMHoJDwcs10aIt4AnqlFdF7Z9g7mx9E/view?usp=sharing" },
   { year: "2015", text: "Merit-based Scholarship for Academic Excellence — HCMUT." },
   { year: "2012", text: "3rd Prize — Provincial Chemistry Competition for Excellent Students, Tay Ninh." },
+  { year: "2012", text: "3rd Prize — Provincial Chemistry Competition for Excellent Students (Casio variant), Tay Ninh." },
+  { year: "2005", text: "Prize-winner — District Competition for Excellent Students in Mathematics, Can Giuoc." },
+  { year: "2005", text: "3rd Prize — Provincial Painting Competition for Excellent Students, Tay Ninh." },
 ];
 
 export type Publication = {
