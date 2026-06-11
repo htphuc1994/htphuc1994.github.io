@@ -144,6 +144,7 @@ export const education = [
 export type Accomplishment = { year: string; text: string; url?: string };
 
 export const accomplishments: Accomplishment[] = [
+  { year: "2026", text: "Fun game: https://htphuc1994.github.io/math-board-game" },
   { year: "2026", text: "AWS Certified Machine Learning Engineer — Associate", url: "https://www.credly.com/badges/3850cff9-1b8d-4206-b0d0-c1e34d2887f9/linked_in_profile" },
   { year: "2026", text: "Anthropic — Claude Certified Architect — Foundations", url: "https://verify.skilljar.com/c/jw7uxiwkv2gp" },
   { year: "2026", text: "Anthropic — Claude Code in Action", url: "https://verify.skilljar.com/c/qk7w3ufzo87g" },
