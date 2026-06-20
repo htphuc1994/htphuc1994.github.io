@@ -15,13 +15,15 @@ export const profile = {
 
 export const summary = `Senior Software Engineer and emerging technical leader with 10+ years of experience designing scalable software platforms across fintech, healthcare, recruitment, and education technology. Strong background in Java/Spring, ReactJS, Python, microservices, AWS, Kubernetes, CI/CD, and distributed system design. Proven ability to drive architectural decisions, improve performance, mentor engineers, and deliver reliable production systems for international teams. With an M.Eng. in Computer Science, ongoing Ph.D. research, and publications in AI/ML and optimization, brings a strong combination of practical engineering leadership and research-oriented problem solving.`;
 
+export type Highlight = string | { text: string; url: string };
+
 export type Role = {
   period: string;
   title: string;
-  company: string;
+  company?: string;
   companyUrl?: string;
-  location: string;
-  highlights: string[];
+  location?: string;
+  highlights: Highlight[];
   stack?: string;
 };
 
@@ -29,12 +31,9 @@ export const roles: Role[] = [
   {
     period: "Mar 2026 — Present",
     title: "Journal Reviewer",
-    company: "Information Processing & Management",
-    companyUrl: "https://www.sciencedirect.com/journal/information-processing-and-management",
-    location: "SCIE/Scopus Q1",
     highlights: [
-      "Peer reviewer for a Q1 journal on information retrieval, NLP, and applied AI research.",
-      "Peer reviewer for the International Journal of System Assurance Engineering & Management (ESCI/Scopus Q2).",
+      { text: "Information Processing & Management — SCIE/Scopus Q1", url: "https://www.sciencedirect.com/journal/information-processing-and-management" },
+      { text: "International Journal of System Assurance Engineering & Management — ESCI/Scopus Q2", url: "https://link.springer.com/journal/13198" },
     ],
   },
   {

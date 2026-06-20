@@ -16,16 +16,20 @@ import { roles } from "../data/cv";
           <div class="period">{role.period}</div>
           <div>
             <h3 class="role-title">{role.title}</h3>
-            <div class="company">
-              {role.companyUrl ? (
-                <a href={role.companyUrl} target="_blank" rel="noopener">{role.company}</a>
-              ) : (
-                role.company
-              )}
-            </div>
-            <div class="location">{role.location}</div>
+            {role.company && (
+              <div class="company">
+                {role.companyUrl ? (
+                  <a href={role.companyUrl} target="_blank" rel="noopener">{role.company}</a>
+                ) : (
+                  role.company
+                )}
+              </div>
+            )}
+            {role.location && <div class="location">{role.location}</div>}
             <ul>
-              {role.highlights.map((h) => <li>{h}</li>)}
+              {role.highlights.map((h) => (
+                <li>{typeof h === "string" ? h : <a href={h.url} target="_blank" rel="noopener">{h.text}</a>}</li>
+              ))}
             </ul>
             {role.stack && <span class="stack">{role.stack}</span>}
           </div>
