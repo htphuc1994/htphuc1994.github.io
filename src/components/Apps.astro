@@ -1,0 +1,24 @@
+---
+import { apps } from "../data/cv";
+---
+
+<section class="section" id="apps">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="index">05 / Builds</span>
+        <h2>Apps</h2>
+      </div>
+    </div>
+    {apps.map((a) => (
+      <div class="entry">
+        <div class="meta">App Store</div>
+        <div>
+          <div class="sub">
+            <a href={a.url} target="_blank" rel="noopener">{a.name}</a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

@@ -34,6 +34,7 @@ export const roles: Role[] = [
     location: "SCIE/Scopus Q1",
     highlights: [
       "Peer reviewer for a Q1 journal on information retrieval, NLP, and applied AI research.",
+      "Peer reviewer for the International Journal of System Assurance Engineering & Management (ESCI/Scopus Q2).",
     ],
   },
   {
@@ -141,10 +142,20 @@ export const education = [
   },
 ];
 
+export type App = { name: string; url: string };
+
+export const apps: App[] = [
+  { name: "Math Duel: 2-Player Math", url: "https://apps.apple.com/vn/app/math-duel-2-player-math/id6779869357" },
+  { name: "Tangram: Shape Puzzle", url: "https://apps.apple.com/vn/app/tangram-shape-puzzle/id6780157329" },
+  { name: "Domino Math", url: "https://apps.apple.com/vn/app/domino-math/id6780782649" },
+  { name: "Math Bingo: Lô Tô", url: "https://apps.apple.com/vn/app/math-bingo-lo-to/id6779921508" },
+  { name: "Cornhole Math: Bag Toss", url: "https://apps.apple.com/vn/app/cornhole-math-bag-toss/id6780393652" },
+  { name: "Abacus: Bead Math", url: "https://apps.apple.com/vn/app/abacus-bead-math/id6780208319" },
+];
+
 export type Accomplishment = { year: string; text: string; url?: string };
 
 export const accomplishments: Accomplishment[] = [
-  { year: "2026", text: "Fun Game: Multiply Duel!", url: "https://htphuc1994.github.io/math-board-game" },
   { year: "2026", text: "AWS Certified Machine Learning Engineer — Associate", url: "https://www.credly.com/badges/3850cff9-1b8d-4206-b0d0-c1e34d2887f9/linked_in_profile" },
   { year: "2026", text: "Anthropic — Claude Certified Architect — Foundations", url: "https://verify.skilljar.com/c/jw7uxiwkv2gp" },
   { year: "2026", text: "Anthropic — Claude Code in Action", url: "https://verify.skilljar.com/c/qk7w3ufzo87g" },
