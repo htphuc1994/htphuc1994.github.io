@@ -152,6 +152,7 @@ export const apps: App[] = [
   { name: "Dam-daman: Indonesian Draughts", url: "https://apps.apple.com/vn/app/dam-daman-indonesian-draughts/id6783260352" },
   { name: "Merrills: Nine Men's Morris", url: "https://apps.apple.com/vn/app/merrills-nine-mens-morris/id6783674200" },
   { name: "Generala: Dice Duel", url: "https://apps.apple.com/vn/app/generala-dice-duel/id6784744557" },
+  { name: "Diketo: Math Stones", url: "https://apps.apple.com/vn/app/diketo-math-stones/id6785942260" },
   { name: "Domino Math", url: "https://apps.apple.com/vn/app/domino-math/id6780782649" },
   { name: "Math Bingo: Lo To", url: "https://apps.apple.com/vn/app/math-bingo-lo-to/id6779921508" },
   { name: "Cornhole Math: Bag Toss", url: "https://apps.apple.com/vn/app/cornhole-math-bag-toss/id6780393652" },
