@@ -153,6 +153,8 @@ export const apps: App[] = [
   { name: "Merrills: Nine Men's Morris", url: "https://apps.apple.com/vn/app/merrills-nine-mens-morris/id6783674200" },
   { name: "Generala: Dice Duel", url: "https://apps.apple.com/vn/app/generala-dice-duel/id6784744557" },
   { name: "Diketo: Math Stones", url: "https://apps.apple.com/vn/app/diketo-math-stones/id6785942260" },
+  { name: "Senet: Pharaoh's Race", url: "https://apps.apple.com/vn/app/senet-pharaohs-race/id6787401851" },
+  { name: "Eye of Horus: Restore the Eye", url: "https://apps.apple.com/vn/app/eye-of-horus-restore-the-eye/id6787660378" },
   { name: "Domino Math", url: "https://apps.apple.com/vn/app/domino-math/id6780782649" },
   { name: "Math Bingo: Lo To", url: "https://apps.apple.com/vn/app/math-bingo-lo-to/id6779921508" },
   { name: "Cornhole Math: Bag Toss", url: "https://apps.apple.com/vn/app/cornhole-math-bag-toss/id6780393652" },
