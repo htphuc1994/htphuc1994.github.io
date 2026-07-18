@@ -5,7 +5,7 @@ export const profile = {
   tagline: "10+ years building scalable platforms across fintech, healthcare, and edtech.",
   location: "Fairfield, Iowa, United States",
   email: "htphuc.cs@gmail.com",
-  phone: "(+84) 90 2413 227",
+  phone: "(+84) 368 15 15 79",
   github: "https://github.com/htphuc1994",
   linkedin: "https://www.linkedin.com/in/phuc-huynh-a6394313a",
   orcid: "https://orcid.org/0009-0000-0402-2432",
