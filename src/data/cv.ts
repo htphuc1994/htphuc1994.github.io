@@ -144,6 +144,7 @@ export const education = [
 export type App = { name: string; url: string };
 
 export const apps: App[] = [
+  { name: "Nile Fields: Rope Stretchers", url: "https://apps.apple.com/vn/app/nile-fields-rope-stretchers/id6789191294" },
   { name: "Math Duel: 2-Player Math", url: "https://apps.apple.com/vn/app/math-duel-2-player-math/id6779869357" },
   { name: "Ashta Chamma: Cowrie Race", url: "https://apps.apple.com/vn/app/ashta-chamma-cowrie-race/id6782073176" },
   { name: "Tangram: Shape Puzzle", url: "https://apps.apple.com/vn/app/tangram-shape-puzzle/id6780157329" },
