@@ -144,6 +144,7 @@ export const education = [
 export type App = { name: string; url: string };
 
 export const apps: App[] = [
+  { name: "Sadu: Symmetry Weave", url: "https://apps.apple.com/vn/app/sadu-symmetry-weave/id6793130868" },
   { name: "Le Compte: Number Duel", url: "https://apps.apple.com/vn/app/le-compte-number-duel/id6792485565" },
   { name: "Star Hop: Leap Math", url: "https://apps.apple.com/vn/app/star-hop-leap-math/id6792006645" },
   { name: "Nile Fields: Rope Stretchers", url: "https://apps.apple.com/vn/app/nile-fields-rope-stretchers/id6789191294" },
