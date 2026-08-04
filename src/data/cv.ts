@@ -163,6 +163,7 @@ export const apps: App[] = [
   { name: "Math Bingo: Lo To", url: "https://apps.apple.com/vn/app/math-bingo-lo-to/id6779921508" },
   { name: "Cornhole Math: Bag Toss", url: "https://apps.apple.com/vn/app/cornhole-math-bag-toss/id6780393652" },
   { name: "Abacus: Bead Math", url: "https://apps.apple.com/vn/app/abacus-bead-math/id6780208319" },
+  { name: "Glow: Selfie Photo Editor", url: "https://apps.apple.com/vn/app/glow-selfie-photo-editor/id6794784114" },
 ];
 
 export type Accomplishment = { year: string; text: string; url?: string };
