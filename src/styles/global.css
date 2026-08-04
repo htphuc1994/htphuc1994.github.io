@@ -323,6 +323,22 @@ img { max-width: 100%; display: block; }
 .entry .sub { color: var(--ink-soft); margin-bottom: 4px; }
 .entry .note { font-size: 14px; color: var(--muted); }
 
+/* ----------- Games / Apps groups (Builds section) ----------- */
+.group-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 36px 0 0;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.group-label:first-of-type { margin-top: 0; }
+.group-label .group-count { color: var(--muted); }
+.group-label + .entry { border-top: none; }
+
 .tag {
   display: inline-block;
   font-family: var(--font-mono);

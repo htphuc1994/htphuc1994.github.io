@@ -1,5 +1,10 @@
 ---
-import { apps } from "../data/cv";
+import { games, apps } from "../data/cv";
+
+const groups = [
+  { label: "Games", items: games },
+  { label: "Apps", items: apps },
+];
 ---
 
 <section class="section" id="apps">
@@ -7,18 +12,23 @@ import { apps } from "../data/cv";
     <div class="section-head">
       <div>
         <span class="index">05 / Builds</span>
-        <h2>Apps</h2>
+        <h2>Games &amp; Apps</h2>
       </div>
     </div>
-    {apps.map((a) => (
-      <div class="entry">
-        <div class="meta">App Store</div>
-        <div>
-          <div class="sub">
-            <a href={a.url} target="_blank" rel="noopener">{a.name}</a>
+    {groups.map((g) => (
+      <>
+        <h3 class="group-label">{g.label} <span class="group-count">{g.items.length}</span></h3>
+        {g.items.map((a) => (
+          <div class="entry">
+            <div class="meta">App Store</div>
+            <div>
+              <div class="sub">
+                <a href={a.url} target="_blank" rel="noopener">{a.name}</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        ))}
+      </>
     ))}
   </div>
 </section>

@@ -143,7 +143,7 @@ export const education = [
 
 export type App = { name: string; url: string };
 
-export const apps: App[] = [
+export const games: App[] = [
   { name: "Sadu: Symmetry Weave", url: "https://apps.apple.com/vn/app/sadu-symmetry-weave/id6793130868" },
   { name: "Le Compte: Number Duel", url: "https://apps.apple.com/vn/app/le-compte-number-duel/id6792485565" },
   { name: "Star Hop: Leap Math", url: "https://apps.apple.com/vn/app/star-hop-leap-math/id6792006645" },
@@ -163,6 +163,9 @@ export const apps: App[] = [
   { name: "Math Bingo: Lo To", url: "https://apps.apple.com/vn/app/math-bingo-lo-to/id6779921508" },
   { name: "Cornhole Math: Bag Toss", url: "https://apps.apple.com/vn/app/cornhole-math-bag-toss/id6780393652" },
   { name: "Abacus: Bead Math", url: "https://apps.apple.com/vn/app/abacus-bead-math/id6780208319" },
+];
+
+export const apps: App[] = [
   { name: "Glow: Selfie Photo Editor", url: "https://apps.apple.com/vn/app/glow-selfie-photo-editor/id6794784114" },
 ];
 
