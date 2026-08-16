@@ -144,6 +144,7 @@ export const education = [
 export type App = { name: string; url: string };
 
 export const games: App[] = [
+  { name: "Coin Bazaar", url: "https://apps.apple.com/vn/app/coin-bazaar/id6799330282" },
   { name: "Sansū: Origami Numbers", url: "https://apps.apple.com/vn/app/id6796904455" },
   { name: "Escoba: Make 15", url: "https://apps.apple.com/vn/app/escoba-make-15/id6793764901" },
   { name: "Sadu: Symmetry Weave", url: "https://apps.apple.com/vn/app/sadu-symmetry-weave/id6793130868" },
