@@ -106,14 +106,6 @@ export const skills = [
 
 export const education = [
   {
-    period: "Aug 2026 — Present",
-    degree: "MBA for Professionals in ERP and Analytics",
-    school: "Maharishi International University",
-    schoolUrl: "https://miu.edu/",
-    location: "Fairfield, Iowa, United States",
-    note: "Research focus: AI/ML, optimisation, portfolio optimisation.",
-  },
-  {
     period: "Dec 2023 — Present",
     degree: "Ph.D. in Computer Science",
     school: "Industrial University of Ho Chi Minh City",
