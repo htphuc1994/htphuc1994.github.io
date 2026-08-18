@@ -3,7 +3,7 @@ export const profile = {
   shortName: "Levi Huynh",
   title: "Senior Software Engineer",
   tagline: "10+ years building scalable platforms across fintech, healthcare, and edtech.",
-  location: "Fairfield, Iowa, United States",
+  location: "Binh Dong Ward, HCMC, Vietnam",
   email: "htphuc.cs@gmail.com",
   phone: "(+84) 368 15 15 79",
   github: "https://github.com/htphuc1994",
