@@ -163,6 +163,7 @@ export const games: App[] = [
 ];
 
 export const apps: App[] = [
+  { name: "Measure: Real Millimetres", url: "https://apps.apple.com/vn/app/measure-real-millimetres/id6801154519" },
   { name: "Glow: Selfie Photo Editor", url: "https://apps.apple.com/vn/app/glow-selfie-photo-editor/id6794784114" },
 ];
 
