@@ -136,6 +136,7 @@ export const education = [
 export type App = { name: string; url: string };
 
 export const games: App[] = [
+  { name: "Carrom Angles", url: "https://apps.apple.com/vn/app/carrom-angles/id6805718383" },
   { name: "Gilli Danda: Call the Distance", url: "https://apps.apple.com/vn/app/gilli-danda-call-the-distance/id6802022720" },
   { name: "Rangku Alu", url: "https://apps.apple.com/vn/app/rangku-alu/id6804214279" },
   { name: "Robo Trails", url: "https://apps.apple.com/vn/app/robo-trails/id6798311822" },
