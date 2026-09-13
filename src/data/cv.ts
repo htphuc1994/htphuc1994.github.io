@@ -202,9 +202,9 @@ export const publications: { journals: Publication[]; proceedings: Publication[]
   journals: [
     {
       year: "2025",
-      citation: "Phuc Tan Huynh. An NSGA-III-HOP algorithm for solving the cardinality-constrained multi-period PO problem using wavelet CVaR. Asia-Pacific Journal of Operational Research.",
+      citation: "Phuc Tan Huynh. An NSGA-III-HOP algorithm for solving the cardinality-constrained multi-period PO problem using wavelet CVaR. Asia-Pacific Journal of Operational Research, vol. 43, no. 05, page 2550052.",
       url: "https://doi.org/10.1142/S0217595925500526",
-      tag: "SCIE/Scopus Q3",
+      tag: "SCIE/Scopus Q3, IF=1.3",
     },
   ],
   proceedings: [
@@ -212,13 +212,13 @@ export const publications: { journals: Publication[]; proceedings: Publication[]
       year: "2025",
       citation: "Huynh, P.T., Son, T.H., Vo, K.D., Huynh-Tuong, N. Twin-Based Reinforcement Learning for Solving Multi-period Portfolio Optimization Problem. IUKM 2025, LNCS vol. 15586, Springer.",
       url: "https://doi.org/10.1007/978-981-96-4603-6_11",
-      tag: "Scopus Q3",
+      tag: "Scopus Q2",
     },
     {
       year: "2024",
       citation: "Huynh, P.T., Son, T.H., Vo, K.D., Huynh-Tuong, N., Soukhal, A. Advanced Integration of Fuzzy MTM LSTM and MLP Models for Forecasting Stock Prices. ICTCS 2024, LNNS vol. 1323, Springer.",
       url: "https://doi.org/10.1007/978-981-96-4139-0_27",
-      tag: "Scopus Q4",
+      tag: "Scopus Q3",
     },
     {
       year: "2023",
