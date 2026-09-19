@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://htphuc1994.github.io/sitemap-index.xml

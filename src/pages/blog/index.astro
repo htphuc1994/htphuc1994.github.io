@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { profile } from "../../data/cv";
+import { publishedPosts, formatDate } from "../../utils/posts";
+
+const posts = publishedPosts(await getCollection("blog"));
+---
+
+<Layout
+  title={`Writing — ${profile.shortName}`}
+  description="Notes on building and shipping software — engineering write-ups from Phuc (Levi) Huynh."
+>
+  <Header />
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="index">Writing</span>
+            <h2>Notes on building and shipping</h2>
+          </div>
+        </div>
+
+        {
+          posts.length === 0 ? (
+            <p class="post-empty">
+              Nothing published yet. Drafts live in <code>src/content/blog/</code>.
+            </p>
+          ) : (
+            <ul class="post-list">
+              {posts.map((post) => (
+                <li class="post-item">
+                  <a class="post-link" href={`/blog/${post.id}/`}>
+                    <time datetime={post.data.pubDate.toISOString()}>
+                      {formatDate(post.data.pubDate)}
+                    </time>
+                    <h3>{post.data.title}</h3>
+                    <p>{post.data.description}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

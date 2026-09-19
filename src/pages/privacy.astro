@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { profile } from "../data/cv";
+
+// Last reviewed, not auto-generated. A date that moves itself on every build
+// claims a review that never happened.
+const lastUpdated = "19 September 2026";
+---
+
+<Layout
+  title={`Privacy — ${profile.shortName}`}
+  description="What this site collects, what it does not, and the third parties involved."
+>
+  <Header />
+  <main>
+    <article class="section post">
+      <div class="container narrow">
+        <h1>Privacy</h1>
+        <p class="post-meta">Last updated: {lastUpdated}</p>
+
+        <div class="prose">
+          <p>
+            This is a personal site: a CV and some writing. It has no accounts, no sign-in,
+            no comments, and no contact form. <strong>I collect nothing about you.</strong>
+          </p>
+
+          <h2>What the site stores on your device</h2>
+          <p>
+            One thing: your light or dark theme choice, kept in your browser's
+            <code>localStorage</code> under the key <code>theme</code>. It never leaves your
+            device and it is not a tracking cookie. Clearing site data removes it.
+          </p>
+
+          <h2>Analytics</h2>
+          <p>
+            None. There is no Google Analytics, no Plausible, no page-view counter of any
+            kind. I do not know who visits or how many.
+          </p>
+
+          <h2>Third parties</h2>
+          <p>
+            The site loads web fonts from <strong>Google Fonts</strong>
+            (<code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>). Requesting
+            a font sends your IP address and browser details to Google, as any request to any
+            server does. Google states it does not use Google Fonts requests to build
+            advertising profiles. See
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+              Google's Privacy Policy</a>.
+          </p>
+          <p>
+            The site is hosted on <strong>GitHub Pages</strong>, and GitHub receives standard
+            server request data. See
+            <a
+              href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+              target="_blank"
+              rel="noopener">GitHub's Privacy Statement</a
+            >.
+          </p>
+          <p>
+            Links out to the App Store, GitHub, LinkedIn and ORCID are ordinary links. Once
+            you follow one, that site's privacy policy applies, not this one.
+          </p>
+
+          <h2>Advertising</h2>
+          <p>
+            <strong>There are no adverts on this site.</strong> If that ever changes, this
+            page will say so before the first advert appears — naming the provider, what it
+            collects, and how to opt out. The mobile games listed on this site are separate
+            products with their own privacy policies, linked from their App Store pages.
+          </p>
+
+          <h2>The CV</h2>
+          <p>
+            A PDF of my CV is published at
+            <a href={profile.resumePdf}>{profile.resumePdf}</a>. It contains contact details
+            I have chosen to make public. That is my data, not yours.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            Questions about this page: <a href={`mailto:${profile.email}`}>{profile.email}</a>.
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</Layout>
