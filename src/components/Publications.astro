@@ -29,7 +29,7 @@ const groups = [
                 ) : (
                   p.citation
                 )}
-                {p.tag && <span class="tag">{p.tag}</span>}
+                {p.tag && <span class:list={["tag", { "tag-q2": /\bQ2\b/.test(p.tag) }]}>{p.tag}</span>}
               </div>
             </div>
           </div>
