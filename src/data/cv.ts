@@ -43,10 +43,11 @@ export const roles: Role[] = [
     companyUrl: "https://www.propelventures.com.au/",
     location: "Australia (remote)",
     highlights: [
-      "Tinybeans — backend engineering on the family-memories platform.",
-      "Education Perfect — applied prompt engineering work with Google Gemini.",
+      "UF project — prompt engineering with Claude, Python and Power BI.",
+      "TB project — backend engineering on AWS, Spring, Snowflake and Terraform.",
+      "EP project — applied prompt engineering with Google Gemini.",
     ],
-    stack: "AWS, Spring, Snowflake, Terraform, Gemini",
+    stack: "Claude, Python, Power BI, AWS, Spring, Snowflake, Terraform, Gemini",
   },
   {
     period: "Dec 2024 — Dec 2025",
