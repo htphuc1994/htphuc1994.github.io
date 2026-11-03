@@ -9,6 +9,7 @@ export const profile = {
   github: "https://github.com/htphuc1994",
   linkedin: "https://www.linkedin.com/in/phuc-huynh-a6394313a",
   orcid: "https://orcid.org/0009-0000-0402-2432",
+  appStore: "https://apps.apple.com/vn/developer/phuc-huynh/id6779869359",
   photo: "/cv/PhucHT4x6RedShirt2026.png",
   resumePdf: "/cv/PhucHuynh_CV.pdf",
 };
@@ -136,40 +137,19 @@ export const education = [
 
 export type App = { name: string; url: string };
 
-export const games: App[] = [
-  { name: "Carrom Angles", url: "https://apps.apple.com/vn/app/carrom-angles/id6805718383" },
-  { name: "Gilli Danda: Call the Distance", url: "https://apps.apple.com/vn/app/gilli-danda-call-the-distance/id6802022720" },
-  { name: "Rangku Alu", url: "https://apps.apple.com/vn/app/rangku-alu/id6804214279" },
-  { name: "Robo Trails", url: "https://apps.apple.com/vn/app/robo-trails/id6798311822" },
-  { name: "Coin Bazaar", url: "https://apps.apple.com/vn/app/coin-bazaar/id6799330282" },
-  { name: "Sansū: Origami Numbers", url: "https://apps.apple.com/vn/app/id6796904455" },
-  { name: "Escoba: Make 15", url: "https://apps.apple.com/vn/app/escoba-make-15/id6793764901" },
-  { name: "Sadu: Symmetry Weave", url: "https://apps.apple.com/vn/app/sadu-symmetry-weave/id6793130868" },
-  { name: "Le Compte: Number Duel", url: "https://apps.apple.com/vn/app/le-compte-number-duel/id6792485565" },
-  { name: "Star Hop: Leap Math", url: "https://apps.apple.com/vn/app/star-hop-leap-math/id6792006645" },
-  { name: "Nile Fields: Rope Stretchers", url: "https://apps.apple.com/vn/app/nile-fields-rope-stretchers/id6789191294" },
-  { name: "Math Duel: 2-Player Math", url: "https://apps.apple.com/vn/app/math-duel-2-player-math/id6779869357" },
-  { name: "Ashta Chamma: Cowrie Race", url: "https://apps.apple.com/vn/app/ashta-chamma-cowrie-race/id6782073176" },
-  { name: "Tangram: Shape Puzzle", url: "https://apps.apple.com/vn/app/tangram-shape-puzzle/id6780157329" },
-  { name: "Macanan: Tiger & Goats", url: "https://apps.apple.com/vn/app/macanan-tiger-goats/id6782366927" },
-  { name: "Surakarta: Loop Capture", url: "https://apps.apple.com/vn/app/surakarta-loop-capture/id6782960574" },
-  { name: "Dam-daman: Indonesian Draughts", url: "https://apps.apple.com/vn/app/dam-daman-indonesian-draughts/id6783260352" },
-  { name: "Merrills: Nine Men's Morris", url: "https://apps.apple.com/vn/app/merrills-nine-mens-morris/id6783674200" },
-  { name: "Generala: Dice Duel", url: "https://apps.apple.com/vn/app/generala-dice-duel/id6784744557" },
-  { name: "Diketo: Math Stones", url: "https://apps.apple.com/vn/app/diketo-math-stones/id6785942260" },
-  { name: "Senet: Pharaoh's Race", url: "https://apps.apple.com/vn/app/senet-pharaohs-race/id6787401851" },
-  { name: "Eye of Horus: Restore the Eye", url: "https://apps.apple.com/vn/app/eye-of-horus-restore-the-eye/id6787660378" },
-  { name: "Domino Math", url: "https://apps.apple.com/vn/app/domino-math/id6780782649" },
-  { name: "Math Bingo: Lo To", url: "https://apps.apple.com/vn/app/math-bingo-lo-to/id6779921508" },
-  { name: "Cornhole Math: Bag Toss", url: "https://apps.apple.com/vn/app/cornhole-math-bag-toss/id6780393652" },
-  { name: "Abacus: Bead Math", url: "https://apps.apple.com/vn/app/abacus-bead-math/id6780208319" },
+export const playStore: App[] = [
+  { name: "Math Duel: 2-Player Math", url: "https://play.google.com/store/apps/details?id=com.levihuynh.mathduel" },
 ];
 
-export const apps: App[] = [
+export const appStore: App[] = [
   { name: "Rowid: Database Viewer", url: "https://apps.apple.com/vn/app/rowid-database-viewer/id6807613049" },
   { name: "Measure: Real Millimetres", url: "https://apps.apple.com/vn/app/measure-real-millimetres/id6801154519" },
   { name: "Glow: Selfie Photo Editor", url: "https://apps.apple.com/vn/app/glow-selfie-photo-editor/id6794784114" },
+  { name: "Math Duel: 2-Player Math", url: "https://apps.apple.com/vn/app/math-duel-2-player-math/id6779869357" },
+  { name: "Abacus: Bead Math", url: "https://apps.apple.com/vn/app/abacus-bead-math/id6780208319" },
 ];
+
+export const appStoreDownloads = "2,000+";
 
 export type Accomplishment = { year: string; text: string; url?: string };
 

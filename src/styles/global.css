@@ -338,6 +338,19 @@ img { max-width: 100%; display: block; }
 .group-label:first-of-type { margin-top: 0; }
 .group-label .group-count { color: var(--muted); }
 .group-label + .entry { border-top: none; }
+.section .section-head .section-sub {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+.see-all {
+  margin: 20px 0 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+.see-all a { color: var(--accent); }
+.see-all a:hover { text-decoration: underline; }
 
 .tag {
   display: inline-block;
@@ -354,6 +367,9 @@ img { max-width: 100%; display: block; }
 /* Q2 ranking: yellow, matching the CV's darkyellow (#E0B800) */
 .tag.tag-q2 { background: rgba(224, 184, 0, 0.18); color: #8a6d00; }
 :root[data-theme="dark"] .tag.tag-q2 { background: rgba(224, 184, 0, 0.18); color: #e0b800; }
+/* Q3 ranking: orange, matching the CV's xcolor orange (#FF8000) */
+.tag.tag-q3 { background: rgba(255, 128, 0, 0.16); color: #a05000; }
+:root[data-theme="dark"] .tag.tag-q3 { background: rgba(255, 128, 0, 0.16); color: #ff9a3c; }
 
 .subsection-title {
   font-family: var(--font-mono);

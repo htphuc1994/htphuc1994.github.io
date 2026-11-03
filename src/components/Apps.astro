@@ -1,9 +1,9 @@
 ---
-import { games, apps } from "../data/cv";
+import { profile, playStore, appStore, appStoreDownloads } from "../data/cv";
 
 const groups = [
-  { label: "Games", items: games },
-  { label: "Apps", items: apps },
+  { label: "Google Play", items: playStore },
+  { label: "App Store", items: appStore },
 ];
 ---
 
@@ -13,6 +13,7 @@ const groups = [
       <div>
         <span class="index">05 / Builds</span>
         <h2>Games &amp; Apps</h2>
+        <p class="section-sub">{appStoreDownloads} downloads on the App Store</p>
       </div>
     </div>
     {groups.map((g) => (
@@ -20,7 +21,7 @@ const groups = [
         <h3 class="group-label">{g.label} <span class="group-count">{g.items.length}</span></h3>
         {g.items.map((a) => (
           <div class="entry">
-            <div class="meta">App Store</div>
+            <div class="meta">{g.label}</div>
             <div>
               <div class="sub">
                 <a href={a.url} target="_blank" rel="noopener">{a.name}</a>
@@ -30,5 +31,8 @@ const groups = [
         ))}
       </>
     ))}
+    <p class="see-all">
+      <a href={profile.appStore} target="_blank" rel="noopener">See all apps on the App Store →</a>
+    </p>
   </div>
 </section>
