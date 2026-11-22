@@ -138,6 +138,7 @@ export const education = [
 export type App = { name: string; url: string };
 
 export const playStore: App[] = [
+  { name: "Rowid: Database Viewer", url: "https://play.google.com/store/apps/details?id=com.levihuynh.rowid" },
   { name: "Math Duel: 2-Player Math", url: "https://play.google.com/store/apps/details?id=com.levihuynh.mathduel" },
   { name: "Abacus: Bead Math", url: "https://play.google.com/store/apps/details?id=com.levihuynh.abacus" },
 ];
